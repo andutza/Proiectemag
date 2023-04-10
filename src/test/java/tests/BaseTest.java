@@ -8,8 +8,9 @@ import pages.SignInPage.SignInPage;
 
 public class BaseTest {
 
-
     public RegisterPage registerPage = RegisterPage.getInstance();
+    public SignInPage signInPage = SignInPage.getInstance();
+
 
 
     @BeforeSuite

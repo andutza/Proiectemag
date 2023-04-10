@@ -10,14 +10,42 @@ import static pages.BasePage.driver;
 import static pages.BasePage.getBaseUrl;
 
 public class RegisterTest extends BaseTest {
-    private String newUrl = getBaseUrl();
+    private String newUrl = getBaseUrl()+"user/login";
     private static final Logger LOG = LoggerFactory.getLogger(RegisterTest.class);
 
     @Test
-    public void register(){
+    public void register() {
         driver.get(newUrl);
 
-        LOG.info("Verify if logo is displayed");
-        Assert.assertTrue(registerPage.IsFormTitleDisplayed(),"logo is not displayed");
+        String email = "tudoranda@yahoo.com";
+
+        LOG.info("Check title");
+        Assert.assertTrue(registerPage.IsFormTitleDisplayed(), "Title is not displayed");
+
+        LOG.info("Check formTitle");
+        Assert.assertTrue(registerPage.IsFormTitleDisplayed(), "formTitle is not displayed");
+
+
+        LOG.info("Check myAccount");
+        Assert.assertTrue(registerPage.IsMyAccountDisplayed(), "MyAccount is not displayed");
+
+        LOG.info("Check myAccount");
+        Assert.assertTrue(registerPage.IsMyAccountDisplayed(), "myAccount is not displayed");
+
+
+        LOG.info("Click New Account radio button");
+        registerPage.setNewAccount();
+
+        LOG.info("Type in Email Address");
+        registerPage.typeInEmail(email);
+
+        LOG.info("Click Continue button");
+        registerPage.setClickContinueButton();
+
+
+
     }
+
+
+
 }
