@@ -21,12 +21,20 @@ public class SignInTest extends BaseTest {
         driver.get(newUrl);
 
         String email = "tudoranda@yahoo.com";
+        String password = "Emagonline1.";
 
 
         LOG.info("Complete the email field");
         Assert.assertTrue(signInPage.isEmailFieldDisplayed(), "Email field is not displayed");
         signInPage.typeInEmail(email);
 
+
+        LOG.info("Click the Next button");
+        signInPage.setClickContinueButton();
+
+
+        LOG.info("Type in  password");
+        signInPage.typeInPassword(password);
 
         LOG.info("Click the Next button");
         signInPage.setClickContinueButton();

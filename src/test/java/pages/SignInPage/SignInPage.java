@@ -26,6 +26,7 @@ public class SignInPage extends BasePage {
 
     private final By inputEmailAddress = By.id("user_login_email");
     private final By clickContinueButton = By.id("user_login_continue");
+    private final By inputPassword = By.id("user_login_password");
 
 
     public boolean isEmailFieldDisplayed() {
@@ -44,6 +45,12 @@ public class SignInPage extends BasePage {
         LOG.info("Click Continue button");
         driver.findElement(clickContinueButton).click();
 
+
+    }
+
+    public void typeInPassword(String password){
+        LOG.info("Type In Password");
+        driver.findElement(inputPassword).sendKeys(password);
 
     }
 
