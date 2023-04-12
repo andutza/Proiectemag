@@ -23,7 +23,10 @@ public class SearchBox extends BasePage {
     }
 
     private final By inputSearchBox = By.id("searchboxTrigger");
-    private final By clickMagnifyingGlass = By.id("em em-search navbar-icon");
+    private final By clickMagnifyingGlass = By.xpath("//i[@class='em em-search']");
+    private final By clickAddToBasket = By.xpath("//i [@class='em em-forward']");
+
+
 
     public void typeInSearchProduct(String product) {
         LOG.info("Type In Product name");
@@ -31,11 +34,18 @@ public class SearchBox extends BasePage {
 
     }
 
-        public void setclickMagnifyingGlass(){
-            LOG.info("Click Magnifying Glass ");
-            driver.findElement(clickMagnifyingGlass).click();
+    public void setclickMagnifyingGlass() {
+        LOG.info("Click Magnifying Glass ");
+        driver.findElement(clickMagnifyingGlass).click();
 
-
-        }
 
     }
+
+    public void setClickAddToBasket() {
+        LOG.info("Click Add To Basket ");
+        driver.findElement(clickAddToBasket).click();
+
+
+    }
+
+}

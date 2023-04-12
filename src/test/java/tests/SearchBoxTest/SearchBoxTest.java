@@ -7,18 +7,12 @@ import org.testng.annotations.Test;
 import pages.SearchBox.SearchBox;
 import tests.BaseTest;
 
-import static pages.BasePage.driver;
-import static pages.BasePage.getBaseUrl;
-
 public class SearchBoxTest extends BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(SearchBox.class);
-    private String newUrl = getBaseUrl() + "user/myaccount?ref=ua_user_dashboard";
-
 
     @Test
-
     public void checkIfLogoIsDisplayed() {
-        driver.get(newUrl);
+
 
         String product = "dezumidificator";
 
@@ -29,5 +23,8 @@ public class SearchBoxTest extends BaseTest {
 
         LOG.info("Click Magnifying Glass");
         searchBox.setclickMagnifyingGlass();
+
+        LOG.info("Click Add To basket");
+        searchBox.setClickAddToBasket();
     }
 }
