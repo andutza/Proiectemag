@@ -26,5 +26,13 @@ public class SearchBoxTest extends BaseTest {
 
         LOG.info("Click Add To basket");
         searchBox.setClickAddToBasket();
+
+
+        LOG.info("Click Compare Check Box");
+        searchBox.setClickCompareCheckBox();
+
+
+        LOG.info("Click Add To Favourite");
+        searchBox.setClickAddToFavourite();
     }
 }

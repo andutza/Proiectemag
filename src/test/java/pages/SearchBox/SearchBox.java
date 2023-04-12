@@ -25,6 +25,8 @@ public class SearchBox extends BasePage {
     private final By inputSearchBox = By.id("searchboxTrigger");
     private final By clickMagnifyingGlass = By.xpath("//i[@class='em em-search']");
     private final By clickAddToBasket = By.xpath("//i [@class='em em-forward']");
+    private final By clickCompareCheckBox = By.xpath("//*[@id=\"main-container\"]/section[2]/div/div[1]/div/div/div/label");
+    private final By clickAddToFavourite = By.xpath("//*[@id=\"main-container\"]");
 
 
 
@@ -44,6 +46,20 @@ public class SearchBox extends BasePage {
     public void setClickAddToBasket() {
         LOG.info("Click Add To Basket ");
         driver.findElement(clickAddToBasket).click();
+
+
+    }
+
+    public void setClickCompareCheckBox() {
+        LOG.info("Click Compare check Box ");
+        driver.findElement(clickCompareCheckBox).click();
+
+
+    }
+
+    public void setClickAddToFavourite() {
+        LOG.info("Click Add To Favourite ");
+        driver.findElement(clickAddToFavourite).click();
 
 
     }
