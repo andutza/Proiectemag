@@ -10,7 +10,7 @@ public class RegisterPage extends BasePage {
     public static final Logger LOG = LoggerFactory.getLogger(RegisterPage.class);
     public static RegisterPage instance;
 
-    private By title = By.xpath("//*[@id=\"masthead\"]/div/div/div[1]/a/img");
+    private By title = By.xpath("//div[@class='auth-logo']");
     private By myAccount = By.xpath("//*[@id=\"my_account\"]/span");
     private By newAccount = By.xpath("/html/body/div[7]/div/div[2]/a[2]");
     private By inputEmailAddress = By.xpath("//*[@id=\"user_login_email\"]");

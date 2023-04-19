@@ -17,7 +17,7 @@ public class SignInTest extends BaseTest {
 
     @Test
 
-    public void checkIfLogoIsDisplayed() {
+    public void signInPage() {
         driver.get(newUrl);
 
         String email = "tudoranda@yahoo.com";
@@ -34,7 +34,7 @@ public class SignInTest extends BaseTest {
 
 
         LOG.info("Type in  password");
-        signInPage.typeInPassword(password);
+        signInPage.typeInPassword(password);//nu merge pentru ca imi apare un captcha sa trec mai departe
 
         LOG.info("Click the Next button");
         signInPage.setClickContinueButton();

@@ -11,7 +11,7 @@ public class SearchBoxTest extends BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(SearchBox.class);
 
     @Test
-    public void checkIfLogoIsDisplayed() {
+    public void searchBox() {
 
 
         String product = "dezumidificator";

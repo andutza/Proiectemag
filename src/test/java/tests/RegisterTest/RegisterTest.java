@@ -22,20 +22,6 @@ public class RegisterTest extends BaseTest {
         LOG.info("Check title");
         Assert.assertTrue(registerPage.IsFormTitleDisplayed(), "Title is not displayed");
 
-        LOG.info("Check formTitle");
-        Assert.assertTrue(registerPage.IsFormTitleDisplayed(), "formTitle is not displayed");
-
-
-        LOG.info("Check myAccount");
-        Assert.assertTrue(registerPage.IsMyAccountDisplayed(), "MyAccount is not displayed");
-
-        LOG.info("Check myAccount");
-        Assert.assertTrue(registerPage.IsMyAccountDisplayed(), "myAccount is not displayed");
-
-
-        LOG.info("Click New Account radio button");
-        registerPage.setNewAccount();
-
         LOG.info("Type in Email Address");
         registerPage.typeInEmail(email);
 

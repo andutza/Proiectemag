@@ -26,7 +26,9 @@ public class SignInPage extends BasePage {
 
     private final By inputEmailAddress = By.id("user_login_email");
     private final By clickContinueButton = By.id("user_login_continue");
-    private final By inputPassword = By.id("user_login_password");
+    private final By inputPassword = By.xpath("//label[@class='required']");
+
+
 
 
     public boolean isEmailFieldDisplayed() {

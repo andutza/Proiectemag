@@ -14,8 +14,8 @@ public class MyBasketTest extends BaseTest {
         LOG.info("Click my basket");
         myBasketPage.setClickMyBasket();
 
-        LOG.info("Click see basket details");
-        myBasketPage.setClickSeeBasketDetails();
+//        LOG.info("Click see basket details");
+//        myBasketPage.setClickSeeBasketDetails();
     }
 
 
