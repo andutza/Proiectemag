@@ -32,6 +32,10 @@ public class ResigilateTest extends BaseTest {
         LOG.info("Click Trolere");
         resigilatePage.setClickTrolere();
 
+        LOG.info("Click RightArrow");
+        resigilatePage.setClickRightArrow();
+
+
 
 
 

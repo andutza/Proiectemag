@@ -24,6 +24,7 @@ public class ResigilatePage extends BasePage {
     private final By clickTelevizoareElectronice = By.xpath("//*[@id=\"navbar\"]/div[2]/ul/li[3]/a/span");
     private final By clickFashionSport = By.xpath("//*[@id=\"navbar\"]/div[2]/ul/li[8]/a/span");
     private final By clickTrolere = By.xpath("//*[@id=\"navbar\"]/div[3]/div/div/ul/li[5]/a/span");
+    private final By clickRightArrow = By.xpath("//*[@id=\"main-section\"]/section[9]/div[3]/div/div[1]/div/div[3]/div[2]/a/i");
 
 
 
@@ -52,6 +53,13 @@ public class ResigilatePage extends BasePage {
     public void setClickTrolere() {
         LOG.info("Click Trolere button");
         driver.findElement(clickTrolere).click();
+
+
+    }
+
+    public void setClickRightArrow() {
+        LOG.info("Click Right Arrow");
+        driver.findElement(clickRightArrow).click();
 
 
     }
