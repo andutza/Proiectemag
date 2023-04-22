@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.BasePage;
-import pages.MyBasketPage.MyBasketPage;
+
 
 public class FavouritePage extends BasePage {
     public static final Logger LOG = LoggerFactory.getLogger(FavouritePage.class);

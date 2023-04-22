@@ -7,8 +7,6 @@ import org.slf4j.LoggerFactory;
 import pages.BasePage;
 
 
-
-
 public class SignInPage extends BasePage {
     public static final Logger LOG = LoggerFactory.getLogger(SignInPage.class);
     public static SignInPage instance;
@@ -26,9 +24,6 @@ public class SignInPage extends BasePage {
 
     private final By inputEmailAddress = By.id("user_login_email");
     private final By clickContinueButton = By.id("user_login_continue");
-    private final By inputPassword = By.xpath("//label[@class='required']");
-
-
 
 
     public boolean isEmailFieldDisplayed() {
@@ -37,30 +32,26 @@ public class SignInPage extends BasePage {
     }
 
 
-    public void typeInEmail(String email){
+    public void typeInEmail(String email) {
         LOG.info("Type In Email Address");
         driver.findElement(inputEmailAddress).sendKeys(email);
 
     }
 
-    public void setClickContinueButton(){
+    public void setClickContinueButton() {
         LOG.info("Click Continue button");
         driver.findElement(clickContinueButton).click();
 
 
     }
 
-    public void typeInPassword(String password){
-        LOG.info("Type In Password");
-        driver.findElement(inputPassword).sendKeys(password);
-
-    }
-
-
-
-
-
-
-
 
 }
+
+
+
+
+
+
+
+

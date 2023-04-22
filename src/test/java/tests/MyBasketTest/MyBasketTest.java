@@ -9,7 +9,7 @@ import tests.BaseTest;
 public class MyBasketTest extends BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(MyBasketTest.class);
     @Test
-    public void checkIfLogoIsDisplayed() {
+    public void clickMyBasket() {
 
         LOG.info("Click my basket");
         myBasketPage.setClickMyBasket();

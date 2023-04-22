@@ -21,7 +21,7 @@ public class SignInTest extends BaseTest {
         driver.get(newUrl);
 
         String email = "tudoranda@yahoo.com";
-        String password = "Emagonline1.";
+
 
 
         LOG.info("Complete the email field");
@@ -33,11 +33,6 @@ public class SignInTest extends BaseTest {
         signInPage.setClickContinueButton();
 
 
-        LOG.info("Type in  password");
-        signInPage.typeInPassword(password);//nu merge pentru ca imi apare un captcha sa trec mai departe
-
-        LOG.info("Click the Next button");
-        signInPage.setClickContinueButton();
     }
 
 }
