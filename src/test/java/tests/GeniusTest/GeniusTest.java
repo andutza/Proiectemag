@@ -15,6 +15,7 @@ public class GeniusTest extends BaseTest {
 
         LOG.info("Click Genius");
         geniusPage.setClickGenius();
+
     }
 
 

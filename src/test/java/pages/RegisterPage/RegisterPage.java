@@ -17,7 +17,6 @@ public class RegisterPage extends BasePage {
     private By clickContinueButton = By.id("user_login_email");
 
 
-
     private RegisterPage() {
     }
 
@@ -27,7 +26,6 @@ public class RegisterPage extends BasePage {
         }
         return instance;
     }
-
 
 
     public boolean IsFormTitleDisplayed() {
@@ -40,7 +38,7 @@ public class RegisterPage extends BasePage {
         return driver.findElement(myAccount).isDisplayed();
     }
 
-    public void setNewAccount(){
+    public void setNewAccount() {
         LOG.info("Click New Account button");
         driver.findElement(newAccount).click();
 
@@ -48,14 +46,13 @@ public class RegisterPage extends BasePage {
     }
 
 
-
-    public void typeInEmail(String email){
+    public void typeInEmail(String email) {
         LOG.info("Type In Email");
         driver.findElement(inputEmailAddress).sendKeys(email);
 
     }
 
-    public void setClickContinueButton(){
+    public void setClickContinueButton() {
         LOG.info("Click Continue button");
         driver.findElement(clickContinueButton).click();
 

@@ -25,7 +25,7 @@ public class ResigilatePage extends BasePage {
     private final By clickFashionSport = By.xpath("//*[@id=\"navbar\"]/div[2]/ul/li[8]/a/span");
     private final By clickTrolere = By.xpath("//*[@id=\"navbar\"]/div[3]/div/div/ul/li[5]/a/span");
     private final By clickRightArrow = By.xpath("//*[@id=\"main-section\"]/section[9]/div[3]/div/div[1]/div/div[3]/div[2]/a/i");
-
+    private final By clickCumparaResigilat = By.xpath("//button[@type='submit' and @class='btn btn-default btn-sm btn-block bundle-product-buy-button po-text-small gtm_nhdl6r' and @data-offer-id='9612526']\n");
 
 
     public void setClickResigilate() {
@@ -60,6 +60,14 @@ public class ResigilatePage extends BasePage {
     public void setClickRightArrow() {
         LOG.info("Click Right Arrow");
         driver.findElement(clickRightArrow).click();
+
+
+    }
+
+
+    public void setClickCumparaResigilat() {
+        LOG.info("Click CumparaResigilat");
+        driver.findElement(clickCumparaResigilat).click();
 
 
     }

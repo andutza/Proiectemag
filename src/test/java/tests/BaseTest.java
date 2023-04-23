@@ -3,6 +3,7 @@ package tests;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import pages.BasePage;
+import pages.CardulCuMilioaneDeIdeiPage.CardulCuMilioaneDeIdeiPage;
 import pages.FavouritePage.FavouritePage;
 import pages.GeniusPage.GeniusPage;
 import pages.MyBasketPage.MyBasketPage;
@@ -20,6 +21,7 @@ public class BaseTest {
     public FavouritePage favouritePage = FavouritePage.getInstance();
     public GeniusPage geniusPage = GeniusPage.getInstance();
     public ResigilatePage resigilatePage = ResigilatePage.getInstance();
+    public CardulCuMilioaneDeIdeiPage cardulCuMilioaneDeIdeiPage = CardulCuMilioaneDeIdeiPage.getInstance();
 
 
 

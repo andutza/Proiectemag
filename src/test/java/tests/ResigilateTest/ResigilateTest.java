@@ -35,6 +35,11 @@ public class ResigilateTest extends BaseTest {
         LOG.info("Click RightArrow");
         resigilatePage.setClickRightArrow();
 
+        LOG.info("Click CumparaResigilat");
+        resigilatePage.setClickCumparaResigilat();
+
+
+
 
 
 

@@ -29,7 +29,6 @@ public class SearchBox extends BasePage {
     private final By clickAddToFavourite = By.xpath("//*[@id=\"main-container\"]");
 
 
-
     public void typeInSearchProduct(String product) {
         LOG.info("Type In Product name");
         driver.findElement(inputSearchBox).sendKeys(product);

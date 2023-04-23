@@ -24,12 +24,15 @@ public class GeniusPage extends BasePage {
     private final By clickGenius = By.xpath("//*[@id=\"auxiliary\"]/div/div/ul[2]/li[1]/a");
 
 
+
     public void setClickGenius() {
         LOG.info("Click Genius button");
         driver.findElement(clickGenius).click();
 
 
     }
+
+
 }
 
 
