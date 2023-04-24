@@ -28,6 +28,7 @@ public class GeniusPage extends BasePage {
     public void setClickGenius() {
         LOG.info("Click Genius button");
         driver.findElement(clickGenius).click();
+        driver.navigate().back();
 
 
     }

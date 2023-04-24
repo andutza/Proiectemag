@@ -14,6 +14,7 @@ public class FavouriteTest extends BaseTest {
 
         LOG.info("Click Favourite");
         favouritePage.setClickFavourite();
+
     }
 
 

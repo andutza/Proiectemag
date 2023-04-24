@@ -15,19 +15,11 @@ public class ResigilateTest extends BaseTest {
         LOG.info("Click Resigilate");
         resigilatePage.setClickResigilate();
 
-
-
-
         LOG.info("Click TelevizoareElectronice");
         resigilatePage.setClickTelevizoareElectronice();
 
-
-
-
         LOG.info("Click FashionSport");
         resigilatePage.setClickFashionSport();
-
-
 
         LOG.info("Click Trolere");
         resigilatePage.setClickTrolere();

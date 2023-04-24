@@ -26,5 +26,6 @@ public class FavouritePage extends BasePage {
     public void setClickFavourite() {
         LOG.info("Click Favourite ");
         driver.findElement(clickFavourite).click();
+        driver.navigate().back();
     }
 }

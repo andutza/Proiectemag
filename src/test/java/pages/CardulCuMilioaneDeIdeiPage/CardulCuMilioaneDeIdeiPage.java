@@ -31,6 +31,7 @@ public class CardulCuMilioaneDeIdeiPage extends BasePage {
     private final By inputSenderMessage = By.xpath("//*[@id=\"sender-message\"]");
 
 
+
     public void setClickCardulCuMilioaneDeIdei() {
         LOG.info("Click CardulCuMilioaneDeIdei ");
         driver.findElement(clickCardulCuMilioaneDeIdei).click();
@@ -80,6 +81,8 @@ public class CardulCuMilioaneDeIdeiPage extends BasePage {
         driver.findElement(inputSenderMessage).sendKeys(Message);
 
     }
+
+
 
 
 }

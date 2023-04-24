@@ -46,6 +46,7 @@ public class CardulCuMilioaneDeideiTest extends BaseTest {
         cardulCuMilioaneDeIdeiPage.typeInSenderMessage(senderMessage);
 
 
+
     }
 
 }

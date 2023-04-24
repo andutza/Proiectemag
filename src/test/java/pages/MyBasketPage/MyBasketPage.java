@@ -34,6 +34,7 @@ public class MyBasketPage extends BasePage {
     public void setClickSeeBasketDetails() {
         LOG.info("Click See Basket Details ");
         driver.findElement(clickSeeBasketDetails).click();
+        driver.navigate().back();
 
 
     }
