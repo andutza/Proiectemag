@@ -8,6 +8,7 @@ import pages.FavouritePage.FavouritePage;
 import pages.GeniusPage.GeniusPage;
 import pages.MyBasketPage.MyBasketPage;
 import pages.OfertaZileiPage.OfertaZileiPage;
+import pages.OferteleEmagPage.OferteleEmagPage;
 import pages.RegisterPage.RegisterPage;
 import pages.ResigilatePage.ResigilatePage;
 import pages.SearchBox.SearchBox;
@@ -24,6 +25,7 @@ public class BaseTest {
     public ResigilatePage resigilatePage = ResigilatePage.getInstance();
     public CardulCuMilioaneDeIdeiPage cardulCuMilioaneDeIdeiPage = CardulCuMilioaneDeIdeiPage.getInstance();
     public OfertaZileiPage ofertaZileiPage = OfertaZileiPage.getInstance();
+    public OferteleEmagPage oferteleEmagPage = OferteleEmagPage.getInstance();
 
 
 
