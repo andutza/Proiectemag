@@ -22,7 +22,7 @@ public class OfertaZileiPage extends BasePage {
     }
 
     private final By clickOfertaZilei = By.xpath("//a[@title='Oferta Zilei']");
-    private final By clickImage = By.xpath("//*[@id=\"cp_widget_55158\"]/div/div[2]/div[1]/a/img");
+    private final By clickImage = By.xpath("//*[@id=\"cp_widget_55287\"]/div/div[2]/div[1]/a/img");
     private final By clickOfertaZileiBadge = By.xpath("//*[@id=\"card_grid\"]/div[1]/div/div/div[3]/a/div[2]/div[1]/span");
     private final By clickAddToBasketButton = By.xpath("//i[@class='em em-cart_fill gtm_680klw']");
 
